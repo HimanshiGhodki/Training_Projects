@@ -1,0 +1,30 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id = "colBean" class = "com.cts.project.College">
+   		<property name="Regno"><value>0103</value></property>
+   		<property name="cname"><value>LNCT</value></property>
+   		<property name="add"><value>bhopal</value></property>
+   		<property name="cphone_no"><value>9587634521</value></property>
+   		<property name="teach" ref="techBean"></property>
+   		<property name="stud" ref="studBean"></property>
+   </bean>
+   
+   <bean id = "techBean" class = "com.cts.project.Teacher">
+   		<property name="tname"><value>rashmi</value></property>
+   		<property name="tadd"><value>kolar</value></property>
+   		<property name="tphone_no"><value>9087654321</value></property>
+   </bean>
+   
+   <bean id = "studBean" class = "com.cts.project.Student">
+   		<property name="sname"><value>poorni</value></property>
+  		<property name="sadd"><value>kolar</value></property>
+   		<property name="sphone_no"><value>7890654321</value></property>
+   </bean>
+   
+</beans>
+   

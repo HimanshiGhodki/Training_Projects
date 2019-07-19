@@ -1,0 +1,75 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id = "msgBean" class = "Message" scope="prototype" init-method="init" destroy-method="destroy">
+   <!--  
+   <property name="str" value="added"></property>
+   -->
+   <constructor-arg value="added"></constructor-arg>
+   </bean>
+   
+   
+   <bean id ="proBean" class = "Product" scope ="prototype">
+    <!-- 
+   <property name="code" value="2121"></property>
+   <property name="name" value="glass"></property>
+   <property name="price" value= "2000"></property>
+   -->
+   <constructor-arg value="2121"></constructor-arg>
+   <constructor-arg value="glass"></constructor-arg>
+   <constructor-arg value="2000"></constructor-arg>
+   
+   </bean> 
+
+	<bean id="prosBean" class="Products" >
+	 <!-- 
+	<property name="pcode"><value>001</value></property>
+	<property name="pname"><value>icard</value></property>
+	<property name="price"><value>100</value></property>	
+	<property name="sob" ref ="supBean"></property>	
+	-->
+	<constructor-arg index="0" value ="001"></constructor-arg>
+	<constructor-arg index="1" value ="icard"></constructor-arg>
+	<constructor-arg index="2" value ="100"></constructor-arg>
+	<constructor-arg index="3" ref ="supBean"></constructor-arg>
+	
+	</bean>  
+	
+	<bean id ="supBean" class="Supplier">
+	<!--  
+	<property name="sname" value ="arya"></property>
+	<property name="sadd" value ="bhopal"></property>
+	<property name="mobile" value ="9075648790"></property>
+	-->
+	<constructor-arg value ="arya"></constructor-arg>
+	<constructor-arg value ="bhopal"></constructor-arg>
+	<constructor-arg value ="9075648790"></constructor-arg>
+	</bean> 
+	
+	<bean id="comBean" class="Company">
+	 <!-- 
+	<property name="cname" value ="cognizant"></property>
+	<property name="cadd" value ="pune"></property>
+	-->
+	<constructor-arg index="0" value ="cognizant"></constructor-arg>
+	<constructor-arg index="1" value ="pune"></constructor-arg>
+	
+	</bean>
+	
+	<bean id="empBean" class="Employee" parent="comBean" >
+	<!-- 
+	<property name="ename" value ="arya"></property>
+	<property name="id" value ="124"></property>
+	<property name="sal" value ="23456"></property>
+	 -->
+	<constructor-arg index="2" value ="arya"></constructor-arg>
+	<constructor-arg index="3" value ="124"></constructor-arg>
+	<constructor-arg index="4" value ="23456"></constructor-arg>
+	
+	</bean>
+
+</beans>
