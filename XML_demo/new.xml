@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="new.xsl"?>
+<catalog>
+    <cd>
+        <title>Empire Burlesque</title>
+        <artist>Bob Dylan</artist>
+        <country>USA</country>
+        <company>Coulambia</company>
+        <price>10.90</price>
+        <year>1985</year>
+    </cd>
+    <cd>
+        <title>i dont care</title>
+        <artist>justin</artist>
+        <country>USA</country>
+        <company>Coulambia</company>
+        <price>11.90</price>
+        <year>2019</year>
+    </cd>
+    <cd>
+        <title>on my way</title>
+        <artist>alan</artist>
+        <country>USA</country>
+        <company>NY</company>
+        <price>05.90</price>
+        <year>2019</year>
+    </cd>
+</catalog>
+

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<HTML>
+    <DIV id="mydiv">
+        First Name: <SPAN id="first"/></SPAN></BR>
+        Last Name: <SPAN id="last"/></SPAN></BR>
+        Graduation: <SPAN id="graduation"/></SPAN></BR>
+        <button onclick="getData();">Fetch</button>
+    </DIV>
+    <script type="text/javascript">
+    function getData()
+    {
+        var someData='{"first":"venkat","last":"subramanyam","graduation":"2006"}';
+        var obj=eval('('+someData+')')
+        for(var prop in obj){
+            document.getElementById(prop).innerHTML=obj[prop];
+        }
+    }
+    </script>
+</HTML>

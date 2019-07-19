@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<user>
+<UserProfile>
+    <userId>101</userId>
+    <name>himanshi</name>
+    <designation>pat</designation>
+    <email>himanshighodki</email>
+    <remark>awesome</remark>
+</UserProfile>
+<UserProfile>
+    <userId>102</userId>
+    <name>rashmi</name>
+    <designation>pat</designation>
+    <email>rashmimandaogane</email>
+    <remark>very sweet</remark>
+</UserProfile> 
+<UserProfile>
+    <userId>103</userId>
+    <name>aditi</name>
+    <designation>pat</designation>
+    <email>aditigangarade</email>
+    <remark>dont_know</remark>
+</UserProfile>       
+</user>
